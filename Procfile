@@ -1,1 +1,1 @@
-web: gunicorn camerarental.wsgi
+web: gunicorn addcamera.app
