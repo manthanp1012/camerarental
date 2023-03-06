@@ -6,7 +6,8 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
 RUN pip install --upgrade pip
-COPY /requirements.txt  C:/Users/Manthan/OneDrive/Desktop/camerarental/camerarental
+RUN pip freeze > requirements.txt
+COPY ./requirements.txt  C:/Users/Manthan/OneDrive/Desktop/camerarental/camerarental
 RUN pip install -r requirements.txt
 
 COPY . C:/Users/Manthan/OneDrive/Desktop/camerarental/camerarental
