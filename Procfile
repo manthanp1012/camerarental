@@ -1,1 +1,1 @@
-web: gunicorn addcamera.app
+web: gunicorn camerarental.wsgi --log-file -
