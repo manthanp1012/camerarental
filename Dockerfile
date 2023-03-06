@@ -10,7 +10,7 @@ RUN pip freeze > requirements.txt
 COPY ./requirements.txt  C:/Users/Manthan/OneDrive/Desktop/camerarental/camerarental
 RUN pip install -r requirements.txt
 
-COPY ./ C:/Users/Manthan/OneDrive/Desktop/camerarental/camerarental
+# COPY ./ C:/Users/Manthan/OneDrive/Desktop/camerarental/camerarental
 
 EXPOSE 8000
 
